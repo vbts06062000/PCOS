@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <title>PCOS Animation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <style>
+        body{
+           display:flex;
+           background-color:#C1E7F5;
+           align-items:center;
+           justify-content:center;
+          }
+          box{
+           animation-name:box;
+           animation-duration:60s;
+           
+           width:35rem;
+           height:25rem;
+           }
+           h1{
+            animation-name:hello;
+            animation-duration:60s;
+            position:absolute;
+            top:10rem;
+            left:35rem;
+           }
+           hr{
+           animation-duration:60s;
+           position:absolute;
+           top:23rem;
+            width:5rem;
+            height:0.4px;
+            background-color:#000;
+           }
+          circle{
+          animation-duration:60s;
+          position:absolute;
+          width:5px;
+          height:5px;
+          border-radius:5px;
+          background-color:#F0E489;
+          }
+            img{
+             animation-name:images;
+             animation-duration:60s;
+              position:absolute;
+             top:15rem;
+            left:38rem;
+            }
+           p{
+            position:absolute;
+            animation-duration:60s;
+           }
+           @keyframes hello{
+            0%{color:rgba(0,0,0,0.0);top:20rem;}
+            2%{top:20rem;}
+            5%{color:#000;top:10rem;}
+           }
+           @keyframes images{
+            0%{opacity:0;}
+            4%{opacity:0;}
+            5%{opacity:1;}
+           }
+           @keyframes box{
+             0%{display:flex;}
+           }
+
+           @keyframes line1{
+             0%{opacity:0;}
+             5%{opacity:0;}
+             6%{opacity:1;}
+             13%{opacity:1;}
+             14%{opacity:0;}
+             100%{opacity:0;}
+           }
+           @keyframes line2{
+             0%{opacity:0;}
+             6%{opacity:0;}
+             7%{opacity:1;}
+             13%{opacity:1;}
+             14%{opacity:0;}
+             100%{opacity:0;}
+           }
+           @keyframes line3{
+             0%{opacity:0;}
+             7%{opacity:0;}
+             8%{opacity:1;}
+             13%{opacity:1;}
+             14%{opacity:0;}
+             100%{opacity:0;}
+           }
+           @keyframes line4{
+             0%{opacity:0;}
+             8%{opacity:0;}
+             9%{opacity:1;}
+             13%{opacity:1;}
+             14%{opacity:0;}
+             100%{opacity:0;}
+           }
+          @keyframes line5{
+             0%{opacity:0;}
+             9%{opacity:0;}
+             10%{opacity:1;}
+             13%{opacity:1;}
+             14%{opacity:0;}
+             100%{opacity:0;}
+           }
+          @keyframes stat1{
+             0%{opacity:0;}
+             14%{opacity:0;}
+             15%{opacity:1;}
+             17%{opacity:1;}
+             18%{opacity:0;}
+             100%{opacity:0;}
+          }
+           @keyframes stat2{
+             0%{opacity:0;}
+             18%{opacity:0;}
+             19%{opacity:1;}
+             21%{opacity:1;}
+             22%{opacity:0;}
+             100%{opacity:0;}
+          }
+          @keyframes circles{
+             0%{opacity:0;}
+             14%{opacity:0;}
+             15%{opacity:1;}
+             21%{opacity:1;}
+             22%{opacity:0;}
+             100%{opacity:0;}
+           }
+             @keyframes circles1{
+             0%{opacity:0;}
+             14%{opacity:0;}
+             14.2%{opacity:1;top:20rem;left:43rem;}
+             14.4%{opacity:1;top:20rem;left:41.5rem;}
+             14.6%{opacity:1;top:19rem;left:40.5rem;}
+             14.8%{opacity:1;top:18rem;left:39.8rem;}
+             15%{opacity:1;16.5rem;left:39.8rem;}
+             15.2%{opacity:1;top:16rem;left:40.8rem;}
+             15.4%{opacity:1;top:16.1rem;left:41.8rem;}
+             15.6%{opacity:1;top:17rem;left:42.8rem;}
+             15.8%{opacity:1;top:17.3rem;left:43.8rem;}
+             16%{opacity:1;top:17.5rem;left:45rem;}
+             16.2%{opacity:1;top:17.5rem;left:45rem;}
+             16.2%{opacity:1;top:18rem;left:48rem;}
+             16.6%{opacity:1;top:19rem;left:48rem;}
+             17%{opacity:1;top:20rem;left:48rem;}
+             18%{opacity:1;top:21.5rem;left:48rem;}
+             19%{opacity:1;top:25rem;left:48rem;}
+             20%{opacity:1;top:29rem;left:48rem;}
+             20%{opacity:1;top:30rem;left:48rem;}
+             20%{opacity:0;top:30rem;left:48rem;}
+             100%{opacity:0;}
+           }
+              @keyframes stat3{
+             0%{opacity:0;}
+             22%{opacity:0;}
+             23%{opacity:1;}
+             25%{opacity:1;}
+             26%{opacity:0;}
+             100%{opacity:0;}
+          }
+        </style>
+    </head>
+    <body>
+     <box>
+    <h1>Female Reproductive System</h1>
+    <img style="width:20rem;height:15rem;"src="fem.jpeg">
+     <circle style="animation-name:circles1;top:20rem;left:43rem;width:5px;height:5px;border-radius:5px;"></circle>
+     <circle style="animation-name:circles;top:20.5rem;left:42rem;"></circle>
+     <circle style="animation-name:circles;top:20rem;left:42rem;"></circle>
+     <circle style="animation-name:circles;top:20.8rem;left:43rem;"></circle>
+    <hr style="animation-name:line1;left:34.5rem;top:17rem;"><p style="animation-name:line1;left:28rem;top:16rem;">Fallopian Tube</p>
+    <hr style="animation-name:line2;left:37rem;top:20rem;"><p style="animation-name:line2;left:33.5rem;top:19rem;">Ovaries</p>
+    <hr style="animation-name:line3;left:49rem;top:20rem;width:10rem;"><p style="animation-name:line4;left:39rem;top:21rem;">Cervix</p>
+    <hr style="animation-name:line4;left:42rem;top:22rem;width:6rem;"><p style="animation-name:line3;left:59.5rem;top:19rem;">Uterus</p>
+    <hr style="animation-name:line5;left:48rem;top:25rem;"><p style="animation-name:line5;left:53.5rem;top:24rem;">Vagina</p>
+    <p style="animation-name:stat1;top:30rem;left:32rem;">Ovulation is the process in which women's ovaries release eggs each month</p>
+    <p style="animation-name:stat2;top:30rem;left:32rem;">If the egg is not fertizlied, she sheds her uterine lining and egg itself during her period.</p>
+    <p style="animation-name:stat3;top:30rem;left:23rem;">The harmonal imbalance in PCOS controls ovulation. It prevents the egg from fully maturing so none of them is released to uterus.The other eggs don't dissolve.</p>
+
+     </box>
+   
+</body>
+</html>
