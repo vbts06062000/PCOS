@@ -16,13 +16,17 @@ font-family: 'Kalam';
 color:#EDD2FF;
 z-index:4;
 }
+.dashed{
+position:fixed;
+width:100%;
+z-index:2;
+}
 .dashed-container{
 display:grid;
 grid-template-columns: auto auto auto;
 width: calc(100%-353px);
 height:60px;
 margin-left:350px;
-z-index:2;
 box-shadow: 2px 2px 5px rgba(0,0,0,0.6);
 background-color:#BCA6D6;
 }
@@ -161,10 +165,12 @@ font-size:0.8em;
 </ul>
 </h2>
 </div>
+<div class="dashed">
 <div class="dashed-container">
 <div style="margin-left:1rem;margin-top:0.3rem;"class="dashed-item"><button class ="las la-bars dash" onclick="sidebar_open()"></button></div>
 <div class="dashed-item"><h1 class = "we" style="margin-top:0rem;">WeWomen<img style="width:50px;height:50px; "src="logo.jpeg"></img></h1></div>
 <div class="dashed-item" ><h3 style="display:flex;float:right;margin-right:1rem;"><a style="text-decoration:none;color:#4D133F;"href="">Hello User!<br>View Profile</a></h3></div></div>
+</div>
 <div class="para-container">
 <div class="para-item">
 <h2>What is PCOS and PCOD?</h2><br>
