@@ -1,0 +1,76 @@
+<html>
+<title>Register</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
+<style>
+.box{
+display:grid;
+justify-content:center;
+align-items:center;
+grid-template-columns: minmax(auto,400px);
+height:500px;
+background-color:#734ACC;
+border-radius:10px;
+color:#EDD2FF;
+font-size:1em;
+font-family:'Kalam';
+}
+
+.bd{
+ display:flex;justify-content:center;align-items:center;margin:0;background-image: linear-gradient(to bottom right,#C5BDF7,#CDD1FE,#C9DCFC,#BFD4F7);
+}
+form{
+margin-top:-10rem;
+}
+h1{
+display:flex;
+justify-content:center;
+background-color:#BCA6D6;
+width:minmax(auto,400px);
+margin-top:-6rem;
+color:#4D133F;
+}
+label,input,button{
+margin-left:2rem;
+}
+input{
+width:80%;
+}
+p{
+display:flex;justify-content:center;
+}
+@media only screen and (max-width:400px){
+.bd{
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:0.8em;
+}
+.box{
+width:100px%;
+height:800px;
+}
+form{
+margin-top:-29rem;
+}
+h1{
+margin-top:-5rem;
+}
+}
+</style>
+<body class="bd">
+<div class="box">
+<form>
+<x><p><h1 style="text-align:center;font-family:'Kalam';">WeWomen<img src="logo.jpeg"style="width:60px;height:60px;"></img></h1></p><br><x>
+<label><b>Enter Email Id</b></label><br>
+<input style="background-color:#EDD2FF;border-color:1px solid #277158;border-radius:5px;height:1.5rem;" type="text"><br><br>
+<label><b>Password</b><br></label>
+<input type="password"  style="background-color:#EDD2FF;border-color:1px solid #277158;border-radius:5px;height:1.5rem;"><br><br>
+<p style="display:block;"><button style="background-color:#EDD2FF;color:#734ACC;border-radius:5px;width:4rem;height:2rem;font-family:'Kalam';"><b>Submit</b></button></p>
+
+</p>
+<form>
+</div>
+</body>
+</html>
