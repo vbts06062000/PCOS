@@ -1,30 +1,43 @@
 <html>
 <head>
-<title>Homepage</title>
+<title>PCOS Animation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
 <link rel="stylesheet" href="style.css">
 <style>
 .sidebar{
-display:block;
 position:fixed;
-height:100%;
 width:345px;
-left:0px;
-top:0px;
-background-color:#BCA6D6;
-border:4px solid #4D133F;
-color:#4D133F;
-z-index:2;
+height:100%;
+margin-left:0;
+background-color:#734ACC;
+font-family: 'Kalam';
+color:#EDD2FF;
+z-index:4;
 }
+.dashed-container{
+display:grid;
+grid-template-columns: auto auto auto;
+width: calc(100%-353px);
+height:60px;
+margin-left:350px;
+z-index:2;
+box-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+background-color:#BCA6D6;
+}
+.dashed-item{
+color:#4D133F;
+font-family: 'Kalam';
+}
+
 .right{
 display:block;
 position:fixed;
 height:100%;
 width:400px;
 left:1150px;
-top:0px;
-background-image:url(pcos1.jpg);
+background-image:url(pcos4.jpg);
 border:4px solid #4D133F;
 }
 table,th,td{
@@ -46,19 +59,13 @@ list-style-type: none;
 }
 .lii{
 margin-bottom:2rem;
-text-decoration: none;
- color:#4D133F;
 }
- a{
-text-decoration: none;
-  color:#4D133F;
- }
 .select{
 border-radius:25px 0px 0px 25px;
 height:50px;
-width:305px;
-background-color:#4D133F;
-color:#BCA6D6;
+width:314px;
+background-color:#EDD2FF;
+color:#734ACC;
 margin-left:-1rem;
 margin-bottom:2rem;
 }
@@ -69,73 +76,101 @@ float:right;
 text-align:center;
 margin-right:1rem;
 margin-top:1rem;
-color:#BCA6D6;
-border: 1px solid #4D133F;
-background-color:#4D133F;
+color:#734ACC;
+border: 1px solid #EDD2FF;
+background-color:#EDD2FF;
 width:20px;
 height:20px;
 }
 .dash{
-display:none;
-margin:1rem;
+dislpay:flex;
+justify-content:center;
 height:40px;
 width:40px;
 background-color:#4D133F;
 color:#BCA6D6;
 font-size:20px;
+border-radius:40px;
 }
 .para-container{
 position:absolute;
 display:grid;
-grid-template-columns: minmax(auto,760px);
-left:360px;
+grid-template-columns: minmax(auto,1100px);
+left:355px;
 top:60px;
 
 }
 .para-item{
-color:#4D133F;
+color:#4D2892;
+font-family: 'Kalam';font-size:1.5em;
 margin:1rem;
 text-align: justify;
 }
 
 @media only screen and (max-width:850px) {
 .sidebar{
+position: fixed;
 display:none;
 }
 .para-container{
 position:absolute;
-left:0;
+left:1rem;
 }
-
+.dashed-container{
+display:grid;
+margin-left:0;
+top:0;
+width:100%;
+}
 .close{
 display:block;
 }
 .dash{
 display:block;
 }
+
+}
+@media only screen and (max-width:500px) {
+.we{
+display:none;
+}
+.dashed-container{
+display:grid;
+margin-left:0;
+width:100%;
+}
+table,th,td{
+font-size:0.7em;
+.para-item{
+font-size:0.8em;
+}
+}
 }
 </style>
 </head>
-<body style="background-color:#F2EEF7;">
+<body style="background-image:linear-gradient(to bottom right,#CDC4FD,#C5BDF7,#BFD4F7,#ABD2F9);">
 <div class="sidebar" id="mySidebar">
 <button class="close" onclick="sidebar_close()"><b>X</b></button>
-<h1>WeWomen<img style="width:50px;height:50px;"src="logo.jpeg"></img></h1>
 <h2 class="hello"><ul class="ull">
 <div class="select"><p style="margin-left:2rem;">Dashboard</p></div>
-<li class="lii"><a href="index.html">What is PCOS?</a></li>
-<li class="lii"><a href ="http://192.168.0.105:8501/">PCOS Predictor</a></li>
-<li class="lii"><a href ="Calendar.html">Cycle Tracker</a></li>
+<li class="lii"><a>What is PCOS?</a></li>
+<li class="lii"><a>PCOS Predictor</a></li>
+<li class="lii"><a>Cycle Tracker</a></li>
 <li class="lii"><a>Community</a></li>
 <li class="lii"><a>Profile</a></li>
 </ul>
 </h2>
 </div>
+<div class="dashed-container">
+<div style="margin-left:1rem;margin-top:0.3rem;"class="dashed-item"><button class ="las la-bars dash" onclick="sidebar_open()"></button></div>
+<div class="dashed-item"><h1 class = "we" style="margin-top:0rem;">WeWomen<img style="width:50px;height:50px; "src="logo.jpeg"></img></h1></div>
+<div class="dashed-item" ><h3 style="display:flex;float:right;margin-right:1rem;"><a style="text-decoration:none;color:#4D133F;"href="">Hello User!<br>View Profile</a></h3></div></div>
 <div class="para-container">
 <div class="para-item">
 <h2>What is PCOS and PCOD?</h2><br>
 <p>PCOD or PCOS is a condition that affects women’s ovaries, the reproductive organs that produce progesterone and estrogen hormones that help in regulating the menstrual cycle and also produce small amount of hormones inhibin, relaxin, and male hormones called androgens.</p>
 <h2><br>PCOS vs PCOD</h2>
-<table style="width: minmax(auto,600px);">
+<table style="width: minmax(auto,500px);">
    <th>Difference</th><th>PCOS</th><th>PCOD</th>
    <tr><td>Definition</td><td>PCOS is a hormonal imbalance due to the overproduction of androgens in ovaries.</td><td>PCOD is a hormonal imbalance due to overproduction of immature eggs in ovaries.</td></tr>
    <tr><td>Impact on Fertility</td><td>More critical; Pregnancy may occur with risk of miscarriage, premature birth.</td><td>Lesser impact on fertility; Pregnancy is possible though it gets delayed.</td></tr>
@@ -144,8 +179,8 @@ display:block;
 </table>
 <h3><br>Understand better by viewing the animation</h3>
 <h3><br></h3>
-<video style="width:300px;"controls>
-  <source src="video1307128862_4h9LYjll (online-video-cutter.com).mp4">
+<video style="width:250px;"controls>
+  <source src="video1544029664-smxhex6c_ML7bLd4J.mp4">
 </video>
 <h2><br>Symptoms</h2>
 <h4><br></h4>
@@ -179,8 +214,7 @@ display:block;
 
 </div>
 </div>
-<button class ="las la-bars dash" onclick="sidebar_open()"></button>
-<div class="right"></div>
+<div ></div>
 <script>
 function sidebar_open() {
   document.getElementById("mySidebar").style.display = "block";
